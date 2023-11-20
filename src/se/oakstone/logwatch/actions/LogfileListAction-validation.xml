@@ -1,0 +1,16 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+    <field name="minDate">
+        <field-validator type="date">
+            <message>Must be on form yyyy-mm-dd [hh:mm:ss]</message>
+        </field-validator>
+    </field>
+    <field name="maxDate">
+        <field-validator type="date">
+            <message key="dateformat"/>
+        </field-validator>
+    </field>
+</validators>
